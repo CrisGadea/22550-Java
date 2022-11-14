@@ -23,6 +23,7 @@ public class Main {
 		System.out.println("Su edad es " + edad);
 		*/
 		
+		/*
 		System.out.println("Ingrese un numero");
 		int numero1 = sc.nextInt();
 		System.out.println("Ingrese otro numero");
@@ -61,6 +62,35 @@ public class Main {
 		
 		// En base a la opcion elegida del usuario, debemos imprimir por consola el resultado de la operación elegida
 		System.out.println("El resultado de la operación es: " + resultado);
+		*/
+		
+		Animal animal1 = new Animal();
+		animal1.setColor("Blanco");
+		Animal animal2 = new Animal("Negro", "Gato", 0.57, 1, 4);
+		
+		Perro perro1 = new Perro();
+		perro1.setNombre("Firulais");
+		
+		Gato gato1 = new Gato();
+		gato1.setTipo("Gato Callejero");
+		Pantera pantera = new Pantera();
+		pantera.setNombre("Cleo");
+		pantera.setPuedeCazar(true);
+		pantera.cazar(gato1);
+		
+		// EJECUTAMOS EL EMITIR SONIDO DE CADA ANIMAL
+		System.out.println(pantera.emitirSonido());
+		System.out.println(gato1.emitirSonido());
+		System.out.println(perro1.emitirSonido());
+		System.out.println(animal1.emitirSonido());
+		
+		
+		
+
+		System.out.println("El animal 1 es de color " + animal1.getColor());
+		System.out.println("El animal 2 es de color " + animal2.getColor());
+		System.out.println("El perro se llama: " + perro1.getNombre());
+
 	}
 
 }
